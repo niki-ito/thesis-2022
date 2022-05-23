@@ -55,7 +55,7 @@ class Txt {
             //display English text
             textFont(minaFontB);
             textWrap(WORD);
-            text(this.convoE[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*19.3, this.horizontalGrids*8);       
+            text(this.convoE[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*20, this.horizontalGrids*8);       
         }
 
     }

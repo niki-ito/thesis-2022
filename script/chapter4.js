@@ -54,7 +54,7 @@ class Chapter4 {
             "That's okay. I was focused on my Animal Crossing garden anyways."];
         let slide3texts = new Txt(slide3namePlate, slide3convoJ, slide3convoE, null);
 
-        let slide4namePlate = ["XXX", "HARU"];
+        let slide4namePlate = ['nameInput', "HARU"];
         let slide4convoJ = [
             "おー。見せて。", 
             "まだアレンジ中だけど。もっと綺麗にしたいんだ。"];
@@ -64,7 +64,7 @@ class Chapter4 {
         let slide4texts = new Txt(slide4namePlate, slide4convoJ, slide4convoE, null);
         
 
-        let slide6namePlate = ["XXX"];
+        let slide6namePlate = ['nameInput'];
         let slide6convoJ = [
             "ニンテンドースイッチはいいよねー。"];
         let slide6convoE = [
@@ -75,10 +75,10 @@ class Chapter4 {
         let slide7convoJ = [
             ""+nameInput+"は今まででどのゲーム機が一番いいと思う?"];
         let slide7convoE = [
-            "Which game console is your favorite XXX?"];
+            "Which game console is your favorite "+nameInput+"?"];
         let slide7texts = new Txt(slide7namePlate, slide7convoJ, slide7convoE, null);
 
-        let slide8namePlate = ["XXX"];
+        let slide8namePlate = ['nameInput'];
         let slide8convoJ = [
             "一番好きなゲーム機は…。"];
         let slide8convoE = [
@@ -92,7 +92,7 @@ class Chapter4 {
             "I love it! Games are awesome."];
         let slide9texts = new Txt(slide9namePlate, slide9convoJ, slide9convoE, null);
 
-        let slide10namePlate = ["HARU","HARU","XXX","HARU","HARU","HARU","HARU","XXX","HARU"];
+        let slide10namePlate = ["HARU","HARU",'nameInput',"HARU","HARU","HARU","HARU",'nameInput',"HARU"];
         let slide10convoJ = [ 
             "将来はゲームデザイナーになりたいんだ。", 
             "デザインもプログラミングもしてみたい。",
@@ -115,7 +115,7 @@ class Chapter4 {
             "Are you looking forward to anything in the future, "+nameInput+"?"];
         let slide10texts = new Txt(slide10namePlate, slide10convoJ, slide10convoE, null);
 
-        let slide11namePlate = ["XXX"];
+        let slide11namePlate = ['nameInput'];
         let slide11convoJ = [ 
             "将来楽しみなのは…。"];
         let slide11convoE = [
@@ -129,7 +129,7 @@ class Chapter4 {
             "I agree. I have worries but also excitement!"]
         let slide12texts = new Txt(slide12namePlate, slide12convoJ, slide12convoE, null);
 
-        let slide15namePlate = ["HARU","XXX","HARU","XXX","HARU","HARU","HARU","HARU","HARU","HARU","HARU","XXX","HARU","HARU","HARU","XXX","HARU","XXX","XXX"];
+        let slide15namePlate = ["HARU",'nameInput',"HARU",'nameInput',"HARU","HARU","HARU","HARU","HARU","HARU","HARU",'nameInput',"HARU","HARU","HARU",'nameInput',"HARU",'nameInput','nameInput'];
         let slide15convoJ = [ 
             ""+nameInput+",伝えなきゃいけないことがあるんだ。",
             "どうしたの？",
@@ -185,7 +185,7 @@ class Chapter4 {
             "I'm sorry, "+nameInput+"."];
         let slide16texts = new Txt(slide16namePlate, slide16convoJ, slide16convoE, null);
 
-        let slide17namePlate = ["XXX","XXX","HARU"];
+        let slide17namePlate = ['nameInput','nameInput',"HARU"];
         let slide17convoJ = [ 
             "わかった。大丈夫だよ。",
             "他のみんなには話した？",
@@ -196,9 +196,9 @@ class Chapter4 {
             "I haven't told anyone from school about being transgender besides the principal and the nurse."];
         let slide17texts = new Txt(slide17namePlate, slide17convoJ, slide17convoE, null);
 
-        let slide18namePlate = ["HARU","HARU","HARU","XXX","HARU"];
+        let slide18namePlate = ["HARU","HARU","HARU",'nameInput',"HARU"];
         let slide18convoJ = [ 
-            ""+nameInput+"Xの家族には言っていいけど、クラスのみんなには絶対言わないでね。約束して。",
+            ""+nameInput+"の家族には言っていいけど、クラスのみんなには絶対言わないでね。約束して。",
             "…まだみんなには知られたくないの。",
             "でも"+nameInput+"は友達だし言わなきゃって思って",
             "わかった。クラスには絶対言わない。約束する。",
@@ -211,7 +211,7 @@ class Chapter4 {
             "Thanks."];
         let slide18texts = new Txt(slide18namePlate, slide18convoJ, slide18convoE, null);
 
-        let slide19namePlate = ["HARU","XXX"];
+        let slide19namePlate = ["HARU",'nameInput'];
         let slide19convoJ = [ 
             "うん、じゃー、またね。",
             "うん。またね。"];

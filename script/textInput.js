@@ -6,11 +6,18 @@ class TxtInput {
 
         this.input = createInput();
         this.input.position(windowWidth/2-this.input.width/2, windowHeight/2);
-        this.input.style("border","2px solid black");
+        this.input.style("border","0.5vh solid black");
         this.input.style("background-color","#DEF7E2");
+        this.input.style("border-radius","1vh");
+        this.input.style("padding","1vh");
 
-        this.submitButton = createButton('submit');
-        this.submitButton.position(windowWidth/2-this.submitButton/2, windowHeight/2+this.input.height);
+        this.submitButton = createButton("&#10003");
+        this.submitButton.position(windowWidth/2+this.input.width/2-this.submitButton.width, windowHeight/2);
+        this.submitButton.style("border","0.5vh solid black");
+        this.submitButton.style("background-color","#DEF7E2");
+        this.submitButton.style("border-radius","1vh");
+        this.submitButton.style("padding","1vh, 0vh");
+        this.submitButton.style("font-size","3vh");
         const correctContextSubmitName = this.submitName.bind(this);
         this.submitButton.mousePressed(correctContextSubmitName);
 
@@ -34,7 +41,6 @@ class TxtInput {
         if(!this.nameChosen) {
             this.showElements();
         }
-    
     }
 
     mousePressed() {

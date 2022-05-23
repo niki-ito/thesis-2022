@@ -72,7 +72,7 @@ class Chapter3 {
         let slide7convoJ = [
             ""+nameInput+"はどんな音楽に興味あるの?"];
         let slide7convoE = [
-            "What music do you listen to, XXX?"];
+            "What music do you listen to, "+nameInput+"?"];
         let slide7texts = new Txt(slide7namePlate, slide7convoJ, slide7convoE, null);
 
         let slide8namePlate = ['nameInput'];

@@ -1,6 +1,6 @@
 let canvas;
 let chapters = [];
-let currentChapterIndex = 0;
+let currentChapterIndex = 5;
 let nameInput;
 
 function setup() {
@@ -16,8 +16,6 @@ function setup() {
   chapters.push(new Chapter3());
   chapters.push(new Chapter4());
   chapters.push(new Chapter5());
-
-  hideSearchBar();
 }
 
 function draw() {
@@ -31,7 +29,6 @@ function mousePressed() {
 
   chapters[currentChapterIndex].mousePressed();
   chapters[currentChapterIndex].playAudio();
-
 }
 
 function mouseReleased() {
@@ -65,38 +62,38 @@ function keyPressed() {
 
 // hide url bar
 
-function hideSearchBar() {
+// function hideSearchBar() {
     
-  var win = window,
-      doc = win.document;
+//   var win = window,
+//       doc = win.document;
 
-  // If there's a hash, or addEventListener is undefined, stop here
-  if ( !location.hash || !win.addEventListener ) {
+//   // If there's a hash, or addEventListener is undefined, stop here
+//   if ( !location.hash || !win.addEventListener ) {
 
-    //scroll to 1
-    window.scrollTo( 0, 1 );
-    var scrollTop = 1,
+//     //scroll to 1
+//     window.scrollTo( 0, 1 );
+//     var scrollTop = 1,
 
-    //reset to 0 on bodyready, if needed
-    bodycheck = setInterval(function(){
-      if( doc.body ){
-        clearInterval( bodycheck );
-        scrollTop = "scrollTop" in doc.body ? doc.body.scrollTop : 1;
-        win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
-      } 
-    }, 15 );
+//     //reset to 0 on bodyready, if needed
+//     bodycheck = setInterval(function(){
+//       if( doc.body ){
+//         clearInterval( bodycheck );
+//         scrollTop = "scrollTop" in doc.body ? doc.body.scrollTop : 1;
+//         win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+//       } 
+//     }, 15 );
 
-    if (win.addEventListener) {
-      win.addEventListener("load", function(){
-        setTimeout(function(){
-          //reset to hide addr bar at onload
-          win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
-        }, 0);
-      }, false );
-    }
-  }
+//     if (win.addEventListener) {
+//       win.addEventListener("load", function(){
+//         setTimeout(function(){
+//           //reset to hide addr bar at onload
+//           win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+//         }, 0);
+//       }, false );
+//     }
+//   }
 
-};
+// };
 
 // function touchStarted(e){
 //     // return false;

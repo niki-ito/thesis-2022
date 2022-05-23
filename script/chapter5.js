@@ -1,6 +1,7 @@
 class Chapter5 {
     constructor() {
         this.slides = [];
+        this.finalSlide = false;
 
         this.currentSlideIndex = 0;
 
@@ -27,17 +28,17 @@ class Chapter5 {
             "...and ran into Haru while shopping in a local convenient store."];
         let slide1texts = new Txt(null, slide1convoJ, slide1convoE, null);
 
-        let slide3namePlate = ["XXX","HARU","HARU","XXX","HARU","HARU"];
+        let slide3namePlate = ['nameInput',"HARU","HARU",'nameInput',"HARU","HARU"];
         let slide3convoJ = [
             "ハル…。げ、元気？", 
-            "元気だよ。"+nameInput+"がいないから寂しいけど。",
+            ""+nameInput+"! 元気だよ。"+nameInput+"がいないから寂しいけど。",
             "でも落ち着いてきたら前みたいにゲームして遊ぼうね。",
             "そうだね。よかった。",
             "あっこれは私のクラスメイトのゲン。",
             "ゲンもゲームが好きで、プログラミングも勉強してるの。"];
         let slide3convoE = [
             "Haru... h-h- how are you?", 
-            "I'm doing good. I miss our school and hanging out though.",
+            ""+nameInput+"! I'm doing good. I miss our school and hanging out though.",
             "But maybe we can play video games like old times once things settle down.",
             "Definitely. I'm glad to hear that you're doing well.",
             "Oh, this is my classmate Gen.",
@@ -100,5 +101,11 @@ class Chapter5 {
             clear();
             this.currentSlideIndex--;
         }      
+    }
+
+    endGame() {
+        if (this.currentSlideIndex === this.slides.length-2) {
+            this.finalSlide = true;
+        }
     }
 }
