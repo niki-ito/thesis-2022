@@ -45,7 +45,7 @@ class Chapter2 {
             chapter2scene13options[2],
             chapter2scene13options[3]);
 
-        let slide3namePlate = ["MATSUBA","XXX","XXX"];
+        let slide3namePlate = ["MATSUBA",'nameInput','nameInput'];
         let slide3convoJ = [
             "お腹すいたー。"+nameInput+"今日の給食何か知ってる?", 
             "マツバはいつも食べ物のことばっかり考えてるよね。",
@@ -63,7 +63,7 @@ class Chapter2 {
             "I love jumbo dumplings. It's my favorite school lunch!"]
         let slide5texts = new Txt(slide5namePlate, slide5convoJ, slide5convoE, null);
 
-        let slide6namePlate = ["MATSUBA & XXX"];
+        let slide6namePlate = ['nameInput'];
         let slide6convoJ = [
             "いただきまーす。"];
         let slide6convoE = [
@@ -77,7 +77,7 @@ class Chapter2 {
             "It's so good! What's your favorite school lunch "+nameInput+"?"];
         let slide8texts = new Txt(slide8namePlate, slide8convoJ, slide8convoE, null);
 
-        let slide9namePlate = ["XXX"];
+        let slide9namePlate = ['nameInput'];
         let slide9convoJ = [
             "学校で一番好きな給食は…。"];
         let slide9convoE = [
@@ -91,7 +91,7 @@ class Chapter2 {
             "Yeah, they're delicious!"];
         let slide10texts = new Txt(slide10namePlate, slide10convoJ, slide10convoE, null);
 
-        let slide12namePlate = ["XXX", "XXX", "XXX", "MATSUBA", "MATSUBA", "XXX", "MATSUBA", "MATSUBA", "MATSUBA"];
+        let slide12namePlate = ['nameInput', 'nameInput', 'nameInput', "MATSUBA", "MATSUBA", 'nameInput', "MATSUBA", "MATSUBA", "MATSUBA"];
         let slide12convoJ = [ 
             "ごちそうさまでした。", 
             "あーお腹いっぱい。マツバは家で餃子作ったことある？",
@@ -114,7 +114,7 @@ class Chapter2 {
             "Who do you eat your dinners with "+nameInput+"?"];
         let slide12texts = new Txt(slide12namePlate, slide12convoJ, slide12convoE, null);
 
-        let slide13namePlate = ["XXX"];
+        let slide13namePlate = ['nameInput'];
         let slide13convoJ = [
             "夜ご飯は…食べる。"];
         let slide13convoE = [
@@ -130,7 +130,7 @@ class Chapter2 {
             "Sometimes, I'd want my little sister to cook dinner for a change."];
         let slide14texts = new Txt(slide14namePlate, slide14convoJ, slide14convoE, null);
 
-        let slide16namePlate = ["XXX","XXX"];
+        let slide16namePlate = ['nameInput','nameInput'];
         let slide16convoJ = [ 
             "マツバって料理もできるし昔から女子に人気だよね。",
             "最近雰囲気変わったし、もしかしてついに彼女できた？"];
@@ -139,7 +139,7 @@ class Chapter2 {
             "You also seem a bit different these days. Could it be that you finally made a girlfriend?"];
         let slide16texts = new Txt(slide16namePlate, slide16convoJ, slide16convoE, null);
 
-        let slide17namePlate = ["MATSUBA", "XXX"];
+        let slide17namePlate = ["MATSUBA", 'nameInput'];
         let slide17convoJ = [ 
             "…彼女は、できてないよ。",
             "そっか。でもきっとマツバならいい彼女が絶対見つかるよね。"];

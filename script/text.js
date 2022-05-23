@@ -61,13 +61,15 @@ class Txt {
     }
 
     replaceAllUndefinedWithName() {
-        for(let i = 0; i < this.namePlate.length; i++){
-            this.namePlate[i] = this.namePlate[i].replace('undefined', nameInput);
-            this.namePlate[i] = this.namePlate[i].replace('NaN', nameInput);
+        if (this.namePlate) {
+            for(let i = 0; i < this.namePlate.length; i++){
+                this.namePlate[i] = this.namePlate[i].replace('undefined', nameInput);
+                this.namePlate[i] = this.namePlate[i].replace('nameInput', nameInput);
+            }
         }
 
         for(let j = 0; j < this.convoJ.length; j++){
-            this.convoJ[j] = this.convoJ[k].replace('undefined', nameInput);
+            this.convoJ[j] = this.convoJ[j].replace('undefined', nameInput);
         }
 
         for(let e = 0; e < this.convoE.length; e++){

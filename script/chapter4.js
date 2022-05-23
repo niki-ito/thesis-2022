@@ -45,7 +45,7 @@ class Chapter4 {
             chapter4scene11options[2],
             chapter4scene11options[3]);
 
-        let slide3namePlate = ["XXX","HARU"];
+        let slide3namePlate = ['nameInput',"HARU"];
         let slide3convoJ = [
             "ごめん、お待たせ！今日は掃除当番で遅くなっちゃった。", 
             "全然いいよ。あつ森で庭の花をアレンジ夢中だったから。"];

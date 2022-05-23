@@ -22,7 +22,7 @@ class Chapter0 {
             "Today is my first day of school after a long summer break."];
         let slide3texts = new Txt(null, this.slide3convoJ, slide3convoE, null);
 
-        let slide4namePlate = ["MOM", +nameInput];
+        let slide4namePlate = ["MOM", 'nameInput'];
         let slide4convoJ = [
             "行ってらっしゃーい！雨降るから気をつけてね。", 
             "はーい。行ってきまーす！"];

@@ -20,12 +20,12 @@ class TxtInput {
         // textFont(minaFontB);
         // text(th
         
-        this.instructions = createElement('h2', '私の名前は…。');
-        this.instructions.position(windowWidth/2-this.input.width/2, windowHeight/5*1.8);
-        this.instructions.style('font-family','wheatoncapitals');
-        this.instructions = createElement('h2', 'My name is...');
-        this.instructions.position(windowWidth/2-this.input.width/2, windowHeight/5*2);
-        this.instructions.style('font-family','mina');
+        this.instructionsJ = createElement('h2', '私の名前は…。');
+        this.instructionsJ.position(windowWidth/2-this.input.width/2, windowHeight/5*1.8);
+        this.instructionsJ.style('font-family','wheatoncapitals');
+        this.instructionsE = createElement('h2', 'My name is...');
+        this.instructionsE.position(windowWidth/2-this.input.width/2, windowHeight/5*2);
+        this.instructionsE.style('font-family','mina');
 
         this.hideElements();
     }
@@ -42,13 +42,15 @@ class TxtInput {
 
     hideElements() {
         this.input.hide();
-        // this.instructions.hide();
+        this.instructionsJ.hide();
+        this.instructionsE.hide();
         this.submitButton.hide();
     }
 
     showElements() {
         this.input.show();
-        // this.instructions.show();
+        this.instructionsJ.show();
+        this.instructionsE.show();
         this.submitButton.show();
     }
 

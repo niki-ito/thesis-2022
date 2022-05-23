@@ -48,7 +48,7 @@ class Chapter1 {
 
         // this.nextSlideButton = new NextButton ("nextSlide");
 
-        let slide3namePlate = ["SORA", "XXX"];
+        let slide3namePlate = ["SORA", 'nameInput'];
         let slide3convoJ = [
             ""+nameInput+" おはよう！久しぶり。夏休みは長いようであっという間だったね。", 
             "そうだね。ついに学校がまた始まっちゃった。"];
@@ -57,7 +57,7 @@ class Chapter1 {
             "Yeah. By the time you know it, it's the first day of school again."];
         let slide3texts = new Txt(slide3namePlate, slide3convoJ, slide3convoE, null);
 
-        let slide5namePlate = ["XXX", "SORA", "SORA", "XXX"];
+        let slide5namePlate = ['nameInput', "SORA", "SORA", 'nameInput'];
         let slide5convoJ = [
             "そら、入部したい部活決めた？", 
             "私はダンス部に入部したいんだ。", 
@@ -70,7 +70,7 @@ class Chapter1 {
             "Which club activities are you interested in "+nameInput+"?"];
         let slide5texts = new Txt(slide5namePlate, slide5convoJ, slide5convoE, null);
 
-        let slide6namePlate = ["XXX"];
+        let slide6namePlate = ['nameInput'];
         let slide6convoJ = [
             "興味がある部活は…。"];
         let slide6convoE = [
@@ -91,7 +91,7 @@ class Chapter1 {
             "Look, look! This is my dog, Kotori."];
         let slide8texts = new Txt(slide8namePlate, slide8convoJ, slide8convoE, null);
 
-        let slide9namePlate = ["SORA", "SORA", "XXX"];
+        let slide9namePlate = ["SORA", "SORA", 'nameInput'];
         let slide9convoJ = [ 
             "一年前に飼った保護犬なんだけど今は六才なの。", 
             "本当大好き。コトリ無しだったら生きていけないわー。",
@@ -109,7 +109,7 @@ class Chapter1 {
             "Do you have something you can't live without besides your family?"];
         let slide10texts = new Txt(slide10namePlate, slide10convoJ, slide10convoE, null);
 
-        let slide11namePlate = ["XXX"];
+        let slide11namePlate = ['nameInput'];
         let slide11convoJ = [
             "ないと生きていけないものは…。"];
         let slide11convoE = [
@@ -138,7 +138,7 @@ class Chapter1 {
             "They should have just dated."];
         let slide14texts = new Txt(slide14namePlate, slide14convoJ, slide14convoE, null);
 
-        let slide15namePlate = ["SORA","XXX"];
+        let slide15namePlate = ["SORA",'nameInput'];
         let slide15convoJ = [ 
             "…",
             "そら, 大丈夫？"];

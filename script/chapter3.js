@@ -43,7 +43,7 @@ class Chapter3 {
             chapter3scene11options[2],
             chapter3scene11options[3]);
 
-        let slide3namePlate = ["XXX"," MIDORI"];
+        let slide3namePlate = ['nameInput'," MIDORI"];
         let slide3convoJ = [
             "あーー体育ちょー大変だった。ミドリって走るの得意なんだね！すっごく速かったよ。", 
             "ありがと！ 私は結構負けず嫌いだからなー。"];
@@ -52,7 +52,7 @@ class Chapter3 {
             "Thanks! I get pretty competitive."];
         let slide3texts = new Txt(slide3namePlate, slide3convoJ, slide3convoE, null);
 
-        let slide5namePlate = ["XXX", "MIDORI"];
+        let slide5namePlate = ['nameInput', "MIDORI"];
         let slide5convoJ = [
             "何聞いてるの？", 
             "ん?BTSだよ。この曲ずっとリピートしてる。"];
@@ -75,7 +75,7 @@ class Chapter3 {
             "What music do you listen to, XXX?"];
         let slide7texts = new Txt(slide7namePlate, slide7convoJ, slide7convoE, null);
 
-        let slide8namePlate = ["XXX"];
+        let slide8namePlate = ['nameInput'];
         let slide8convoJ = [
             "好きな音楽は…。"];
         let slide8convoE = [
@@ -89,7 +89,7 @@ class Chapter3 {
             "Cool! Music is the best."];
         let slide9texts = new Txt(slide9namePlate, slide9convoJ, slide9convoE, null);
 
-        let slide10namePlate = ["XXX","MIDORI","MIDORI", "MIDORI"];
+        let slide10namePlate = ['nameInput',"MIDORI","MIDORI", "MIDORI"];
         let slide10convoJ = [ 
             "ミドリはBTSのコンサート行ったことあるの?",
             "実は来年やっとコンサート行けることになったの。",
@@ -102,7 +102,7 @@ class Chapter3 {
             "Do you have a type that you're attracted to "+nameInput+"?"];
         let slide10texts = new Txt(slide10namePlate, slide10convoJ, slide10convoE, null);
 
-        let slide11namePlate = ["XXX"];
+        let slide11namePlate = ['nameInput'];
         let slide11convoJ = [
             "好きなタイプは…。"];
         let slide11convoE = [
@@ -116,7 +116,7 @@ class Chapter3 {
             "Nice! But there's a chance we might like someone different from that."];
         let slide12texts = new Txt(slide12namePlate, slide12convoJ, slide12convoE, null);
 
-        let slide14namePlate = ["MIDORI","MIDORI","XXX","MIDORI","MIDORI","XXX"];
+        let slide14namePlate = ["MIDORI","MIDORI",'nameInput',"MIDORI","MIDORI",'nameInput'];
         let slide14convoJ = [ 
             "誰かを好きになるっていいよね。",
             "気になった人はいっぱいいるけどちゃんと好きになった人はまだいないんだ。",
