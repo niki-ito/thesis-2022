@@ -48,8 +48,17 @@ class Slide {
     }
 
     mousePressed() {
+    
         if (this.isCompleted()) {
-            this.nextButton.mousePressed();
+            if(!this.textInput) {
+                this.nextButton.mousePressed();
+             }    
+        }
+
+        if (this.textInput) {
+            if (this.textInput.nameChosen) {
+                this.nextButton.mousePressed();
+            }
         }
 
         if(this.backButton) {
@@ -66,13 +75,17 @@ class Slide {
                 this.choices.mousePressed();
         }
 
-        // if(this.textInput) {
-        //     this.textInput.mosuePressed();
-        // }
-
         if(this.slider) {
             this.slider.mousePressed();
         }
+
+        // if (this.textInput) {
+        //     if (this.textInput.submitName()){
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+        // }
 
     }
 
@@ -108,21 +121,18 @@ class Slide {
             }
         }
 
-        if (this.texts) { 
-            if(this.texts){
-                if (this.texts.checkNamePlate()&&this.nextButton.mouseInRect()){
-                    talkingSound.play(0.3, 1, 0.2, random(0, 2), random(0.5, 1));  
-                }
-                
+        if(this.texts){
+            if (this.texts.checkNamePlate()&&this.nextButton.mouseInRect()){
+                talkingSound.play(0.3, 1, 0.2, random(0, 2), random(0.5, 1));  
             }
-
+            
         }
     }
 
     isCompleted() {
         
         //if the slide has no image or choices, it is complete
-        if (!this.texts && !this.choices) {
+        if (!this.texts && !this.choices && !this.textInput) {
             return true;
         }
  
@@ -144,9 +154,6 @@ class Slide {
             }
         } 
 
-        // if (this.textInput.submitName()){
-        //     return true;
-        // }
     }
 
     firstText() {

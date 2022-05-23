@@ -58,6 +58,5 @@ class TxtInput {
         nameInput = this.input.value();
         this.hideElements();
         this.nameChosen = true;
-        return true;
     }
 }
