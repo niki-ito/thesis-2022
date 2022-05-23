@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'mina';
+    src: url(../../assets/fonts/mina-bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 /* @font-face {
     font-family: 'corporate';
     src: url(../../assets/fonts/corporate-bold.otf) format('opentype');
