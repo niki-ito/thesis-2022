@@ -107,7 +107,7 @@ class Txt {
 
     checkNamePlate() {
         if(this.namePlate){
-            if(this.namePlate[this.currentConvoIndex] === nameInput){
+            if(this.namePlate[this.currentConvoIndex] === 'nameInput'){
                 return false;
             }else {
                 return true;
