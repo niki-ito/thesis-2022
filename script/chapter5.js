@@ -6,7 +6,7 @@ class Chapter5 {
         this.currentSlideIndex = 0;
 
         let nextSlideButton = new NextButton(nextSlideBtnIcon, null);
-        let nextChapterButton = new NextButton(nextChapterBtnIcon, null);
+        let nextChapterButton = new NextButton(nextChapterBtnIcon, "endgame");
         let previousSlideButton = new BackButton(previousSlideBtnIcon);
 
         let slide1scene = new Scene(chapter5scenes[0]);
@@ -101,11 +101,5 @@ class Chapter5 {
             clear();
             this.currentSlideIndex--;
         }      
-    }
-
-    endGame() {
-        if (this.currentSlideIndex === this.slides.length-2) {
-            this.finalSlide = true;
-        }
     }
 }

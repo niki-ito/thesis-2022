@@ -12,9 +12,18 @@ class NextButton{
     }
 
     mousePressed() {
-        if (this.mouseInRect()) {
+        if (this.mouseInRect() && !this.callback) {
             chapters[currentChapterIndex].nextSlideButton();
         }
+
+        if (this.callback) {
+            // href = 'http://our-likes.com/';
+        }
+
+        // if(this.callback){
+        //     let a = createA('http://our-likes.com/',"End Game 終わる");
+        //     a.position (windowWidth/2, windowHeight/2);
+        // }
     }
 
     keyPressed() {
