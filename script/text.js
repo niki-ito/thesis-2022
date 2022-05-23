@@ -11,7 +11,7 @@ class Txt {
         this.verticleGrids = this.sceneH/26;
         this.horizontalGrids = windowWidth/10;
         this.topOfScene = windowHeight/2-this.sceneH/2;
-
+        
         this.firstTimeDisplaying = true;
     }
 
@@ -61,12 +61,18 @@ class Txt {
     }
 
     replaceAllUndefinedWithName() {
-        if (this.namePlate) {
-            this.namePlate[this.currentConvoIndex] = this.namePlate[this.currentConvoIndex].replace('NaN', nameInput);
+        for(let i = 0; i < this.namePlate.length; i++){
+            this.namePlate[i] = this.namePlate[i].replace('undefined', nameInput);
+            this.namePlate[i] = this.namePlate[i].replace('NaN', nameInput);
         }
-        this.convoJ[this.currentConvoIndex] = this.convoJ[this.currentConvoIndex].replace('undefined', nameInput);
-    
-        this.convoE[this.currentConvoIndex] = this.convoE[this.currentConvoIndex].replace('undefined', nameInput);
+
+        for(let j = 0; j < this.convoJ.length; j++){
+            this.convoJ[j] = this.convoJ[k].replace('undefined', nameInput);
+        }
+
+        for(let e = 0; e < this.convoE.length; e++){
+            this.convoE[e] = this.convoE[e].replace('undefined', nameInput);
+        }
     }
 
 
