@@ -67,7 +67,7 @@ function preload() {
 
   chapter0slide1gif = loadImage("./assets/images/gif/screen-size-logo-gif.gif");
 
-    for (let i = 1; i < 3; i++) {
+    for (let i = 0; i < 3; i++) {
       chapter0scenes.push(loadImage("./assets/images/chapter0/scene" + i + ".png"));
       }
 
@@ -102,7 +102,11 @@ function preload() {
       chapter5scenes.push(loadImage("./assets/images/chapter5/scene" + i + ".png"));
       }
 
-
+  chapter1slide0gif = loadImage("./assets/images/chapter1/scene1.gif");
+  chapter2slide0gif = loadImage("./assets/images/chapter2/scene1.gif");
+  chapter3slide0gif = loadImage("./assets/images/chapter3/scene1.gif");
+  chapter4slide0gif = loadImage("./assets/images/chapter4/scene1.gif");
+  chapter5slide6gif = loadImage("./assets/images/chapter5/scene6.gif");
 
   chapter1slide17gif = loadImage("./assets/images/chapter1/scene17-gif.gif");
   chapter2slide18gif = loadImage("./assets/images/chapter2/scene18-gif.gif");

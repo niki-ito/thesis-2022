@@ -14,9 +14,10 @@ class Chapter5 {
         let slide3scene = new Scene(chapter5scenes[2]);
         let slide4scene = new Scene(chapter5scenes[3]);
         let slide5scene = new Scene(chapter5scenes[4]);
-        let slide6scene = new Scene(chapter5scenes[5]);
-        let slide7scene = new Scene(chapter5scenes[6]);
-        let slide8scene = new Scene(chapter5scenes[7]);
+        let slide6scene = new Scene(chapter5slide6gif);
+        let slide7scene = new Scene(chapter5scenes[5]);
+        let slide8scene = new Scene(chapter5scenes[6]);
+        let slide9scene = new Scene(chapter5scenes[7]);
 
         let slide5slider = new Sliders();
 
@@ -54,7 +55,8 @@ class Chapter5 {
         this.slides.push(new Slide(slide5scene, nextSlideButton, previousSlideButton, null, null, null, null, null, slide5slider)); //5
         this.slides.push(new Slide(slide6scene, nextSlideButton, previousSlideButton, null, null, null, null, null, null)); //6
         this.slides.push(new Slide(slide7scene, nextSlideButton, previousSlideButton, null, null, null, null, null, null)); //7
-        this.slides.push(new Slide(slide8scene, nextChapterButton, previousSlideButton, null, null, null, null, null, null)); //8
+        this.slides.push(new Slide(slide8scene, nextSlideButton, previousSlideButton, null, null, null, null, null, null)); //8
+        this.slides.push(new Slide(slide9scene, nextChapterButton, previousSlideButton, null, null, null, null, null, null)); //9
     }
 
     display() {

@@ -8,6 +8,7 @@ class Chapter1 {
         let nextChapterButton = new NextButton(nextChapterBtnIcon, null);
         let previousSlideButton = new BackButton(previousSlideBtnIcon);
 
+        let slide0scene = new Scene(chapter1slide0gif);
         let slide1scene = new Scene(chapter1scenes[0]);
         let slide2scene = new Scene(chapter1scenes[1]);
         let slide3scene = new Scene(chapter1scenes[2]);
@@ -173,7 +174,8 @@ class Chapter1 {
         let slide21texts = new Txt(null, slide21convoJ, slide21convoE, null);
 
         //Slide(scene, nextButton, backButton, choices, texts, audio, amp, textInput)
-        this.slides.push(new Slide(slide1scene, nextSlideButton, null, null, null, null, null, null, null )); //1
+        this.slides.push(new Slide(slide0scene, nextSlideButton, null, null, null, null, null, null, null )); //0
+        this.slides.push(new Slide(slide1scene, nextSlideButton, previousSlideButton, null, null, null, null, null, null )); //1
         this.slides.push(new Slide(slide2scene, nextSlideButton, previousSlideButton, null, null, null, null, null, null )); //2
         this.slides.push(new Slide(slide3scene, nextSlideButton, previousSlideButton, null, slide3texts, null, null, null, null )); //3
         this.slides.push(new Slide(slide4scene, nextSlideButton, previousSlideButton, null, null, null, null, null, null )); //4
@@ -204,13 +206,13 @@ class Chapter1 {
     mousePressed() {
         this.slides[this.currentSlideIndex].mousePressed();
 
-        if (this.currentSlideIndex === 1 && !rainSound.isLooping()) {
+        if (this.currentSlideIndex === 2 && !rainSound.isLooping()) {
             rainSound.loop(0,1,1);
           }else if (this.currentSlideIndex === this.slides.length -1){
             rainSound.stop();
           }
 
-        if (this.currentSlideIndex === 3) {
+        if (this.currentSlideIndex === 4) {
             rainSound.stop();
             rainSound.loop(0,1,0.5);
         }
@@ -219,13 +221,13 @@ class Chapter1 {
     keyPressed() {
         this.slides[this.currentSlideIndex].keyPressed(); 
         
-        if (this.currentSlideIndex === 1 && !rainSound.isLooping()) {
+        if (this.currentSlideIndex === 2 && !rainSound.isLooping()) {
             rainSound.loop(0,1,1);
           }else if (this.currentSlideIndex === this.slides.length -1){
             rainSound.stop();
           }
 
-        if (this.currentSlideIndex === 3) {
+        if (this.currentSlideIndex === 4) {
             rainSound.stop();
             rainSound.loop(0,1,0.5);
         }

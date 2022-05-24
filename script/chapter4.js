@@ -8,6 +8,7 @@ class Chapter4 {
         let nextChapterButton = new NextButton(nextChapterBtnIcon, null);
         let previousSlideButton = new BackButton(previousSlideBtnIcon);
 
+        let slide0scene = new Scene(chapter4slide0gif);
         let slide1scene = new Scene(chapter4scenes[0]);
         let slide2scene = new Scene(chapter4scenes[1]);
         let slide3scene = new Scene(chapter4scenes[2]);
@@ -229,7 +230,8 @@ class Chapter4 {
         let slide22texts = new Txt(null, slide22convoJ, slide22convoE, null);
 
         //Slide(scene, nextButton, choices, texts, audio, textInput)
-        this.slides.push(new Slide(slide1scene, nextSlideButton, null, null, null, null, null, null, null, null )); //1
+        this.slides.push(new Slide(slide0scene, nextSlideButton, null, null, null, null, null, null, null, null )); //2
+        this.slides.push(new Slide(slide1scene, nextSlideButton, previousSlideButton, null, null, null, null, null, null, null )); //1
         this.slides.push(new Slide(slide2scene, nextSlideButton, previousSlideButton, null, null, null, null, null , null)); //2
         this.slides.push(new Slide(slide3scene, nextSlideButton, previousSlideButton, null, slide3texts, null, null, null, null )); //3
         this.slides.push(new Slide(slide4scene, nextSlideButton, previousSlideButton, null, slide4texts, null, null, null, null )); //4
