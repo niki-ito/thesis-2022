@@ -182,9 +182,9 @@ body {
 }
 
 .nav li {
-    font-family: 'mina';
+    font-family: 'wheatoncapitals';
     font-weight: normal;
-    font-size: 3vw;
+    font-size: 4vw;
     line-height: 2vh;
     list-style: none;
     text-align: right;
@@ -194,14 +194,14 @@ body {
 .Japanese {
     font-family: "mina";
     font-weight: bold;
-    font-size: 4vw;
+    font-size: 5vw;
     line-height: 1vh;
 }
 
 #home {
     font-family: 'wheatoncapitals';
     font-weight: normal;
-    font-size: 5vw; 
+    font-size: 6vw; 
     padding: 0vh;
 }
 
