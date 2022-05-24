@@ -28,8 +28,10 @@ class Slide {
                 this.choices.drawButton();
             } 
         } else {
-            this.nextButton.display();
-            if (this.backButton) {
+            if (this.nextButton){
+                this.nextButton.display();
+            }
+             if (this.backButton) {
             this.backButton.display()
             }
         }
@@ -49,10 +51,12 @@ class Slide {
 
     mousePressed() {
     
-        if (this.isCompleted()) {
-            if(!this.textInput) {
-                this.nextButton.mousePressed();
-             }    
+        if (this.nextButton) {
+            if (this.isCompleted()) {
+                if(!this.textInput) {
+                    this.nextButton.mousePressed();
+                 }    
+            }
         }
 
         if (this.textInput) {
@@ -102,9 +106,11 @@ class Slide {
     }
 
     keyPressed(){
-        if (this.isCompleted()) {
-            this.nextButton.keyPressed();
-        }   
+        if (this.nextButton) {
+            if (this.isCompleted()) {
+                this.nextButton.keyPressed();
+            } 
+        }  
         
         if(this.backButton) {
             if (this.firstText()) {

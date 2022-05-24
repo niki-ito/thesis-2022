@@ -5,6 +5,7 @@ class NextButton{
         this.xpos = windowWidth/6*5;
         this.ypos = windowHeight/15*13;
         this.wh = windowWidth/8;
+
     }
 
     display() {
@@ -12,18 +13,27 @@ class NextButton{
     }
 
     mousePressed() {
-        if (this.mouseInRect() && !this.callback) {
+        if (this.mouseInRect()) {
             chapters[currentChapterIndex].nextSlideButton();
         }
 
-        if (this.callback) {
-            // href = 'http://our-likes.com/';
-        }
-
-        // if(this.callback){
-        //     let a = createA('http://our-likes.com/',"End Game 終わる");
-        //     a.position (windowWidth/2, windowHeight/2);
+        // if (this.callback) {
+        //     // href = 'http://our-likes.com/';
         // }
+
+        if(this.callback){
+            let end = createA('../../index.html',"End Game");
+            end.position (windowWidth/2-end.width/2, windowHeight/2);
+            end.style('font-family','wheatoncapitals');
+            end.style('left','30vw');
+            end.style('text-decoration','none');
+            end.style('color','black');
+            end.style("background-color","#DEF7E2");
+            end.style("border-radius","1vh");
+            end.style("padding","1vh");
+            end.style("font-size","3vh");
+            nextChapSound.play(0,1,0.3);
+        }
     }
 
     keyPressed() {

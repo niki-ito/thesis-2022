@@ -57,6 +57,7 @@ class Chapter5 {
         this.slides.push(new Slide(slide7scene, nextSlideButton, previousSlideButton, null, null, null, null, null, null)); //7
         this.slides.push(new Slide(slide8scene, nextSlideButton, previousSlideButton, null, null, null, null, null, null)); //8
         this.slides.push(new Slide(slide9scene, nextChapterButton, previousSlideButton, null, null, null, null, null, null)); //9
+        this.slides.push(new Slide(null, null, null, null, null, null, null, null, null)); //9
     }
 
     display() {

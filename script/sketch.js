@@ -1,6 +1,6 @@
 let canvas;
 let chapters = [];
-let currentChapterIndex = 0;
+let currentChapterIndex = 5;
 let nameInput;
 
 function setup() {
