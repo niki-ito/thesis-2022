@@ -276,29 +276,37 @@ body {
 }
 
 #resume {
-    margin: 0 20px;
-    padding: 30px;
+    height: 100%;
+    padding: 5vw;
+    padding-top: 10vw;
+}
+  
+  #about-game {
+    padding: 5vw;
+    margin-bottom: 5vw;
+    background-color: #a2c9cf;
+    border: 0.5vh solid black;
+    border-radius: 1.5vh;
   }
   
-  .resume-row {
-    display: grid;
-    grid-gap: 3rem;
-    grid-template-columns: 100%;
-    grid-template-areas: "profile" "info";
-    align-items: center;
-    margin-bottom: 20px;
+  #about-me {
+    padding: 5vw;
+    background-color: #a2c9cf;
+    border: 0.5vh solid black;
+    border-radius: 1.5vh;
+  }
+
+  .about-text {
+    background-color: #dfe7e2;
+    border-radius: 1.5vh;
+    padding: 2vh;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 500;
+    font-size: 3.5vw;
+
   }
   
-  .resume-column1 {
-    grid-area: profile;
-    text-align: end;
-  }
-  
-  .resume-column2 {
-    grid-area: info;
-  }
-  
-  #resumeImage {
+  .about-img {
     width: 100%;
   }
   
@@ -306,17 +314,14 @@ body {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
-    transition: all .2s ease-in-out;
-  }
-  
-  #contacts a:hover {
-    transform: scale(1.1); 
   }
 
-  /* #instagram-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  #contacts img {
+      width: 5vh;
   }
-  .instagram-media {
-    display: inline-grid;
-  } */
+
+  #full-img {
+      width: 100vw;
+      height: auto;
+      margin-top: -5vh;
+  }
