@@ -30,7 +30,7 @@ class NextButton{
             end.style('color','black');
             end.style("background-color","#DEF7E2");
             end.style("border-radius","1vh");
-            end.style("padding","1vh");
+            end.style("padding","2vh");
             end.style("font-size","3vh");
             nextChapSound.play(0,1,0.3);
         }

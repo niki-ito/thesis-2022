@@ -43,9 +43,6 @@ class TxtInput {
         }
     }
 
-    mousePressed() {
-    }
-
     hideElements() {
         this.input.hide();
         this.instructionsJ.hide();
@@ -64,5 +61,6 @@ class TxtInput {
         nameInput = this.input.value();
         this.hideElements();
         this.nameChosen = true;
+        return true;
     }
 }
