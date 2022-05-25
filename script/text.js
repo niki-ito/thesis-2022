@@ -13,6 +13,7 @@ class Txt {
         this.topOfScene = windowHeight/2-this.sceneH/2;
         
         this.firstTimeDisplaying = true;
+        textFont(corpFontB);
     }
 
     display() {
@@ -23,37 +24,37 @@ class Txt {
         //display namePlate
         if (this.choiceBox) {
             if(this.namePlate) {
-                textFont(minaFontB);
+                // textFont(minaFontB);
                 textSize(windowHeight/35);
                 text(this.namePlate[this.currentConvoIndex],this.horizontalGrids, this.topOfScene+this.verticleGrids*4.7);
             }
     
             //display Japanese text
-            textFont(corpFontB);
+            // textFont(corpFontB);
             textSize(windowHeight/40);
             textWrap(CHAR);
             text(this.convoJ[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*6, this.horizontalGrids*8);
     
             //display English text
-            textFont(minaFontB);
+            // textFont(minaFontB);
             textWrap(WORD);
             text(this.convoE[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*7, this.horizontalGrids*8); 
         } else {
 
             if(this.namePlate) {
-                textFont(minaFontB);
+                // textFont(minaFontB);
                 textSize(windowHeight/35);
                 text(this.namePlate[this.currentConvoIndex],this.horizontalGrids, this.topOfScene+this.verticleGrids*16.5);
             }
     
             //display Japanese text
-            textFont(corpFontB);
+            // textFont(corpFontB);
             textSize(windowHeight/45);
             textWrap(CHAR);
             text(this.convoJ[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*18, this.horizontalGrids*8);
     
             //display English text
-            textFont(minaFontB);
+            // textFont(minaFontB);
             textWrap(WORD);
             text(this.convoE[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*20, this.horizontalGrids*8);       
         }
