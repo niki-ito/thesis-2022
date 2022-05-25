@@ -312,3 +312,11 @@ body {
   #contacts a:hover {
     transform: scale(1.1); 
   }
+
+  /* #instagram-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .instagram-media {
+    display: inline-grid;
+  } */
