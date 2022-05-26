@@ -58,7 +58,7 @@ class Chapter1 {
             "Yeah. By the time you know it, it's the first day of school again."];
         let slide3texts = new Txt(slide3namePlate, slide3convoJ, slide3convoE, null);
 
-        let slide5namePlate = ['nameInput', "SORA", "SORA", 'nameInput'];
+        let slide5namePlate = ['nameInput', "SORA", "SORA", "SORA"];
         let slide5convoJ = [
             "そら、入部したい部活決めた？", 
             "私はダンス部に入部したいんだ。", 
