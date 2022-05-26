@@ -185,10 +185,10 @@ body {
     font-family: 'wheatoncapitals';
     font-weight: normal;
     font-size: 4vw;
-    line-height: 2vh;
+    line-height: 5vw;
     list-style: none;
     text-align: right;
-    padding: 1vh 0;
+    /* padding: 1vh 0; */
 }
 
 .Japanese {
